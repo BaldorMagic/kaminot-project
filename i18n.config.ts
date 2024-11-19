@@ -1,6 +1,8 @@
 export default defineI18nConfig(() => ({
     legacy: false,
-    locale: 'en',
+    strategy: 'prefix_except_default',
+    locales: ['en', 'fr', 'da', 'de', 'nl'],
+    defaultLocale: 'en',
     messages: {
       en: {
         welcome: 'Welcome'
